@@ -86,7 +86,7 @@ function Landing() {
           </StyledIconButton>
           <StyledIconButton
             component={Link}
-            href="/resume.pdf" // Update with the actual path to your PDF resume
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

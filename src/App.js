@@ -13,7 +13,7 @@ import QuantumDevices from './Pages/Projects/QuantumDevices';
 
 function App() {
   return (
-    <Router>
+    <Router basename=''>
       <ScrollToTop/>
       <CssBaseline />
       <Navbar />

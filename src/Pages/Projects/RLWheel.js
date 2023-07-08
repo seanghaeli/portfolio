@@ -1,8 +1,6 @@
 import React from 'react';
-import { Typography, Grid, CardMedia, Box } from '@mui/material';
+import { Typography, Grid, CardMedia, Box, Link } from '@mui/material';
 import ProjectPage from './ProjectPage';
-import { Link } from 'react-router-dom';
-
 
 const RLWheel = () => {
   const project = {
@@ -94,7 +92,7 @@ const RLWheel = () => {
               </Grid>
             </Grid>
             <Typography variant="body2" style={{ marginTop: '1rem', textAlign: 'left' }}>
-              Learn more in the full <Link to="/rlwheelreport.pdf" target="_blank" rel="noopener noreferrer">Technical Report</Link>.
+              Learn more in the full <Link href="/rlwheelreport.pdf" target="_blank" rel="noopener noreferrer"> Technical Report </Link>.
             </Typography>
           </>
         ),
