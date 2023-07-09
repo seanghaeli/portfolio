@@ -5,7 +5,7 @@ const ProjectPage = ({ project }) => {
   const { title, subtitle, picture, sections } = project;
 
   const titleStyle = {
-    fontSize: 'calc(1.5rem + 1vw)', // Adjust the base and scaling factor as needed
+    fontSize: 'calc(1.5rem + 1vw)',
     textAlign: 'center',
   };
 
@@ -17,7 +17,7 @@ const ProjectPage = ({ project }) => {
         width: '90%',
         marginLeft: 'auto',
         marginRight: 'auto',
-        padding: '20px', // Add desired padding here
+        padding: '20px',
       }}
       className="fade-in"
     >
