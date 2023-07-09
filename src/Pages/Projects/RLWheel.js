@@ -92,7 +92,7 @@ const RLWheel = () => {
               </Grid>
             </Grid>
             <Typography variant="body2" style={{ marginTop: '1rem', textAlign: 'left' }}>
-              Learn more in the full <Link href="/rlwheelreport.pdf" target="_blank" rel="noopener noreferrer"> Technical Report </Link>.
+              Learn more in the full <Link href="rlwheelreport.pdf" target="_blank" rel="noopener noreferrer"> Technical Report </Link>.
             </Typography>
           </>
         ),

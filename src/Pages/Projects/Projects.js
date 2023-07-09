@@ -64,12 +64,12 @@ function Projects() {
 
   const academicProjects = [
     {
-      title: 'Project 5',
-      imageSrc: 'project5.png',
-      link: '...',
+      title: 'Papers',
+      imageSrc: 'isingmodel.png',
+      link: 'papers',
     },
     {
-      title: 'Project 6',
+      title: 'Project 7',
       imageSrc: 'project6.png',
       link: '...',
     },
@@ -141,7 +141,7 @@ function Projects() {
         {academicProjects.map((project, index) => (
           <ProjectItemWrapper key={index}>
             <ProjectItem>
-              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+              <Link to={project.link}>
                 <ImageContainer>
                   <Image src={process.env.PUBLIC_URL + '/' + project.imageSrc} alt={project.title} />
                 </ImageContainer>

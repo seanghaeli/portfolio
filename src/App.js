@@ -10,6 +10,9 @@ import RLWheel from './Pages/Projects/RLWheel';
 import ScrollToTop from './Components/ScrollToTop';
 import Box from '@mui/material/Box';
 import QuantumDevices from './Pages/Projects/QuantumDevices';
+import RLWheelReport from './Pages/Projects/RLWheelReport';
+import QuickestAscent from './Pages/Projects/QuickestAscent'
+import Papers from './Pages/Papers/Papers';
 
 function App() {
   return (
@@ -28,7 +31,9 @@ function App() {
           <Route path="/resume.pdf" element={<Resume />} />
           <Route path="/rlwheel" element={<RLWheel />} />
           <Route path="/quantumdevices" element={<QuantumDevices />} />
-          <Route path="/rlwheelreport.pdf" element={<Resume />} />
+          <Route path="/rlwheelreport.pdf" element={<RLWheelReport />} />
+          <Route path="/papers" element={<Papers />} />
+          <Route path="/quickestascent.pdf" element={<QuickestAscent />} />
         </Routes>
       </Box>
     </Router>
