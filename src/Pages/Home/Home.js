@@ -26,10 +26,9 @@ function Home() {
         sx={{
           m: 3,
           backgroundColor: '#FFFFFF',
-          width: '90%',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          padding: '20px', // Add desired padding here
+          width: '100%',
+          justifyContent: 'center',
+          margin: '0',
         }}
         className="fade-in"
       >

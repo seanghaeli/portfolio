@@ -18,13 +18,16 @@ import IsingModel from './Pages/Papers/IsingModel';
 function App() {
   return (
     <Router basename=''>
-      <ScrollToTop/>
+      <ScrollToTop />
       <CssBaseline />
       <Navbar />
       <Box
         sx={{
           backgroundColor: '#F7F7F7',
-          padding: '1% 2%',
+          padding: '2% 4%',
+          minHeight: '100vh', // Update to '100vh'
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
         <Routes>

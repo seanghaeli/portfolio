@@ -14,9 +14,8 @@ const ProjectPage = ({ project }) => {
       sx={{
         m: 3,
         backgroundColor: '#FFFFFF',
-        width: '90%',
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        width: '100%',
+        margin: 0,
         padding: '20px',
       }}
       className="fade-in"
@@ -34,7 +33,7 @@ const ProjectPage = ({ project }) => {
                   component="h2"
                   align="center"
                   color="text.secondary"
-                  style={{ fontSize: '1.2rem' }} // Adjust as needed
+                  style={{ fontSize: '1.5rem' }} // Adjust as needed
                 >
                   {subtitle}
                 </Typography>
