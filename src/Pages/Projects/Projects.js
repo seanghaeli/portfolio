@@ -25,8 +25,8 @@ const ProjectItem = styled(Box)(({ theme }) => ({
 }));
 
 const ImageContainer = styled(Box)(() => ({
-  width: '20vw',
-  height: '20vh',
+  width: '30vw',
+  height: '30vh',
   overflow: 'hidden',
   display: 'flex',
   alignItems: 'center',
@@ -124,20 +124,25 @@ function Projects() {
                   <Image src={process.env.PUBLIC_URL + '/' + project.imageSrc} alt={project.title} />
                 </ImageContainer>
               </Link>
-              <Title
-                variant="subtitle1"
-                component="h3"
-                sx={{
-                  fontSize: {
-                    xs: '3vw',
-                    sm: '2vw',
-                    md: '2vw',
-                    lg: '2vw',
-                  },
-                }}
+              <Link
+                to={project.link}
+                style={{ textDecoration: 'none' }}
               >
-                {project.title}
-              </Title>
+                <Title
+                  component="h3"
+                  variant="inherit" color="black"
+                  sx={{
+                    fontSize: {
+                      xs: '3vw',
+                      sm: '2vw',
+                      md: '2vw',
+                      lg: '1.5vw',
+                    },
+                  }}
+                >
+                  {project.title}
+                </Title>
+              </Link>
             </ProjectItem>
           </ProjectItemWrapper>
         ))}
@@ -170,20 +175,25 @@ function Projects() {
                   <Image src={process.env.PUBLIC_URL + '/' + project.imageSrc} alt={project.title} />
                 </ImageContainer>
               </Link>
-              <Title
-                variant="subtitle1"
-                component="h3"
-                sx={{
-                  fontSize: {
-                    xs: '3vw',
-                    sm: '2vw',
-                    md: '2vw',
-                    lg: '2vw',
-                  },
-                }}
+              <Link
+                to={project.link}
+                style={{ textDecoration: 'none' }}
               >
-                {project.title}
-              </Title>
+                <Title
+                  component="h3"
+                  variant="inherit" color="black"
+                  sx={{
+                    fontSize: {
+                      xs: '3vw',
+                      sm: '2vw',
+                      md: '2vw',
+                      lg: '1.5vw',
+                    },
+                  }}
+                >
+                  {project.title}
+                </Title>
+              </Link>
             </ProjectItem>
           </ProjectItemWrapper>
         ))}
