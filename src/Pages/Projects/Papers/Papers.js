@@ -19,11 +19,6 @@ const papers = [
         thumbnail: 'cmb.png',
         link: '/fermiparadox.pdf',
     },
-    {
-        title: 'Wheel test',
-        thumbnail: 'cmb.png',
-        link: '/rlwheelreport.pdf',
-    },
 ];
 
 const Papers = () => {
