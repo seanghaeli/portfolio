@@ -5,9 +5,26 @@ const ProjectPage = ({ project }) => {
   const { title, subtitle, picture, sections } = project;
 
   const titleStyle = {
-    fontSize: 'calc(1.5rem + 1vw)',
-    textAlign: 'center',
-  };
+    fontSize: {
+      xs: '4vw',
+      sm: '4vw',
+      md: '3vw',
+      lg: '2vw',
+      xl: '3vw',
+    },
+    textAlign: 'center'
+  }
+
+  const subtextStyle = {
+    fontSize: {
+      xs: '2.5vw',
+      sm: '2.5vw',
+      md: '2vw',
+      lg: '1.5vw',
+      xl: '1.5vw',
+    },
+    textAlign: 'center'
+  }
 
   return (
     <Box
@@ -24,16 +41,25 @@ const ProjectPage = ({ project }) => {
         <Box p={3} bgcolor="transparent">
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={12} md={6}>
-              <Typography variant="h3" component="h1" style={titleStyle}>
+              <Typography
+                variant="h3"
+                component="h1"
+                sx={{
+                  fontSize: titleStyle.fontSize,
+                  textAlign: titleStyle.textAlign,
+                }}
+              >
                 {title}
               </Typography>
               {subtitle && (
                 <Typography
                   variant="h6"
                   component="h2"
-                  align="center"
                   color="text.secondary"
-                  style={{ fontSize: '1.5rem' }} // Adjust as needed
+                  sx={{
+                    fontSize: subtextStyle.fontSize,
+                    textAlign: subtextStyle.textAlign,
+                  }}
                 >
                   {subtitle}
                 </Typography>
@@ -53,10 +79,23 @@ const ProjectPage = ({ project }) => {
 
           {sections.map((section, index) => (
             <React.Fragment key={index}>
-              <Typography variant="h4" component="h2" align="center">
+              <Typography
+                variant="h4"
+                component="h2"
+                align="center"
+                sx={{
+                  fontSize: titleStyle.fontSize,
+                  textAlign: titleStyle.textAlign,
+                }}
+              >
                 {section.title}
               </Typography>
-              <Box textAlign="center">
+              <Box
+                sx={{
+                  fontSize: subtextStyle.fontSize,
+                  textAlign: subtextStyle.textAlign,
+                }}
+              >
                 {section.content}
               </Box>
             </React.Fragment>
@@ -64,7 +103,7 @@ const ProjectPage = ({ project }) => {
 
         </Box>
       </Container>
-    </Box>
+    </Box >
   );
 };
 

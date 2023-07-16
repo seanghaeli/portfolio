@@ -33,7 +33,7 @@ function Home() {
         className="fade-in"
       >
         <Grid container spacing={3}>
-          <Grid item xs={12} mb={3} sx={{height: '30%'}}>
+          <Grid item xs={12} mb={3} sx={{ height: '30%' }}>
             <Element name="intro">
               <Box
                 sx={{
@@ -57,7 +57,18 @@ function Home() {
                   justifyContent: 'center',
                 }}
               >
-                <Typography variant="h2" align="center">
+                <Typography
+                  variant="h2"
+                  align="center"
+                  sx={{
+                    fontSize: {
+                      xs: '6vw',
+                      sm: '5vw',
+                      md: '3vw',
+                      lg: '4vw',
+                    },
+                  }}
+                >
                   Professional Experience
                 </Typography>
               </Box>
@@ -76,7 +87,17 @@ function Home() {
                   justifyContent: 'center',
                 }}
               >
-                <Typography variant="h2" align="center">
+                <Typography
+                  variant="h2"
+                  align="center"
+                  sx={{
+                    fontSize: {
+                      xs: '6vw',
+                      sm: '5vw',
+                      md: '3vw',
+                      lg: '4vw',
+                    },
+                  }}>
                   Selected Projects
                 </Typography>
               </Box>

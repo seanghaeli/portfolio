@@ -1,5 +1,5 @@
 import React from 'react';
-import PDF from '../../Components/PDF'
+import PDF from '../../../Components/PDF'
 
 function QuickestAscent() {
   return (

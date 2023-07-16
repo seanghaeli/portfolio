@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from '@mui/material';
 
 function Navbar() {
+  const isPhoneScreen = useMediaQuery('(max-width:600px)');
+
   const navbarStyle = {
     position: 'fixed',
-    top: '5%',
+    top: '4%',
     left: '1%',
-    transform: 'translateY(-50%)',
-    width: '2vw',
-    height: '2vw',
-    zIndex: 9999,
+    width: isPhoneScreen ? '6vw' : '2vw',
+    height: isPhoneScreen ? '6vw' : '2vw',
+    zIndex: 9999
   };
 
   return (

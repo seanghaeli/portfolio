@@ -24,14 +24,15 @@ const ProjectItem = styled(Box)(({ theme }) => ({
   height: '100%',
 }));
 
-const ImageContainer = styled('div')(({ theme }) => ({
-  width: '15vw',
-  height: '15vw',
+const ImageContainer = styled(Box)(() => ({
+  width: '20vw',
+  height: '20vh',
   overflow: 'hidden',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 }));
+
 
 const Image = styled('img')({
   width: '100%',
@@ -39,13 +40,20 @@ const Image = styled('img')({
   objectFit: 'contain',
 });
 
-const Title = styled(Typography)(({ theme }) => ({
+const Title = styled(Typography)(() => ({
   mt: 2,
-  fontWeight: 'bold',
-  width: '90%', // Limit the width of the title container
-  margin: '0 auto', // Center the title horizontally
-  fontSize: '1vw', 
+  width: '90%',
+  margin: '0 auto',
 }));
+
+const headerTextStyle = {
+  fontSize: {
+    xs: '6vw',
+    sm: '4vw',
+    md: '3vw',
+    lg: '3vw',
+  },
+}
 
 function Projects() {
   const engineeringProjects = [
@@ -68,22 +76,17 @@ function Projects() {
       imageSrc: 'isingmodel.png',
       link: 'papers',
     },
-    {
-      title: 'Project 7',
-      imageSrc: 'project6.png',
-      link: '...',
-    },
     // Add more academic projects as needed
   ];
 
   const responsive = {
     bigdesktop: {
-      breakpoint: { max: 3840, min: 2560 }, // Update the max and min values to match the desired resolution for 4K screens
+      breakpoint: { max: 3840, min: 2560 },
       items: 3,
       partialVisibilityGutter: 40,
     },
     desktop: {
-      breakpoint: { max: 2560, min: 1023 }, // Update the max and min values to match the desired resolution for 4K screens
+      breakpoint: { max: 2560, min: 1023 },
       items: 3,
       partialVisibilityGutter: 40,
     },
@@ -96,7 +99,11 @@ function Projects() {
 
   return (
     <Box sx={{ mt: 4 }}>
-      <Typography variant="h4" component="h2" sx={{ marginBottom: 2, fontSize: '2vw' }}>
+      <Typography
+        variant="h4"
+        component="h2"
+        sx={{ fontSize: headerTextStyle.fontSize }}
+      >
         Engineering, Software
       </Typography>
       <Carousel
@@ -117,7 +124,18 @@ function Projects() {
                   <Image src={process.env.PUBLIC_URL + '/' + project.imageSrc} alt={project.title} />
                 </ImageContainer>
               </Link>
-              <Title variant="subtitle1" component="h3">
+              <Title
+                variant="subtitle1"
+                component="h3"
+                sx={{
+                  fontSize: {
+                    xs: '3vw',
+                    sm: '2vw',
+                    md: '2vw',
+                    lg: '2vw',
+                  },
+                }}
+              >
                 {project.title}
               </Title>
             </ProjectItem>
@@ -125,7 +143,13 @@ function Projects() {
         ))}
       </Carousel>
 
-      <Typography variant="h4" component="h2" sx={{ marginBottom: 2, marginTop: 4, fontSize: '2vw'}}>
+      <Typography
+        variant="h4"
+        component="h2"
+        sx={{
+          fontSize: headerTextStyle.fontSize
+        }}
+      >
         Academic
       </Typography>
       <Carousel
@@ -146,7 +170,18 @@ function Projects() {
                   <Image src={process.env.PUBLIC_URL + '/' + project.imageSrc} alt={project.title} />
                 </ImageContainer>
               </Link>
-              <Title variant="subtitle1" component="h3">
+              <Title
+                variant="subtitle1"
+                component="h3"
+                sx={{
+                  fontSize: {
+                    xs: '3vw',
+                    sm: '2vw',
+                    md: '2vw',
+                    lg: '2vw',
+                  },
+                }}
+              >
                 {project.title}
               </Title>
             </ProjectItem>

@@ -14,13 +14,19 @@ const ExperienceItem = styled(Box)(({ theme }) => ({
   height: '100%'
 }));
 
-const TextLine = styled(Typography)(({ theme }) => ({
-  fontSize: '1vw', 
-}));
+const textSizing = {
+  fontSize: {
+    xs: '3vw',
+    sm: '2.5vw',
+    md: '2vw',
+    lg: '1vw',
+    xl: '1vw',
+  },
+}
 
-const ImageContainer = styled('div')(({ theme }) => ({
-  width: '5vw', // Adjust the value as needed for the desired scaling
-  height: '5vw', // Adjust the value as needed for the desired scaling
+const ImageContainer = styled(Box)(() => ({
+  width: '10vw',
+  height: '10vh', 
   overflow: 'hidden',
   display: 'flex',
   alignItems: 'center',
@@ -97,7 +103,6 @@ function Experience() {
       description: (
         <>
           Developed experiments to investigate single-electron tunneling devices. <Link to="/quantumdevices" component={RouterLink}>See more</Link>
-
         </>
       ),
       link: "https://phas.ubc.ca/~qdev/",
@@ -116,18 +121,18 @@ function Experience() {
                   <Image src={process.env.PUBLIC_URL + '/' + item.imageSrc} alt={item.company} />
                 </ImageContainer>
               </Link>
-              <TextLine variant="subtitle1" component="h3" sx={{ mt: 2, fontWeight: 'bold', flexGrow: 0 }}>
+              <Typography variant="subtitle1" component="h3" sx={{ mt: 2, fontWeight: 'bold', flexGrow: 0, ...textSizing }}>
                 {item.company}
-              </TextLine>
-              <TextLine variant="body2" component="p" sx={{ flexGrow: 0 }}>
+              </Typography>
+              <Typography variant="body2" component="p" sx={{ flexGrow: 0, ...textSizing }}>
                 {item.position}
-              </TextLine>
-              <TextLine variant="body2" component="p" sx={{ flexGrow: 0 }}>
+              </Typography>
+              <Typography variant="body2" component="p" sx={{ flexGrow: 0, ...textSizing }}>
                 {item.duration}
-              </TextLine>
-              <TextLine variant="body2" component="p" sx={{ mt: 1, flexGrow: 0 }}>
+              </Typography>
+              <Typography variant="body2" component="p" sx={{ mt: 1, flexGrow: 0, ...textSizing }}>
                 {item.description}
-              </TextLine>
+              </Typography>
             </ExperienceItem>
           </Grid>
         ))}

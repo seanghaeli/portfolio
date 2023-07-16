@@ -14,7 +14,7 @@ const RLWheel = () => {
         content: (
           <>
             <div style={{ margin: '1rem' }}></div>
-            <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'center' }}>
+            <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'center', fontSize: 'inherit' }}>
               Develop autonomous platforms for "sim2real" reinforcement learning training.
             </Typography>
             <div style={{ margin: '1rem' }}></div>
@@ -27,13 +27,13 @@ const RLWheel = () => {
           <Grid container spacing={2} alignItems="center" justifyContent="center">
             <Grid item xs={12} md={8}>
               <Box sx={{ my: 1 }}>
-                <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left' }}>
+                <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left', fontSize: 'inherit'}}>
                   The complexities and inconsistencies of physical systems present challenges for reinforcement learning applications.
                   To bridge this gap, the project endeavors to create self-resetting, autonomous platforms for "sim2real" training,
                   ultimately enhancing the application of simulation-trained models to real-world scenarios.
                 </Typography>
                 <br />
-                <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left' }}>
+                <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left', fontSize: 'inherit' }}>
                   Our project is motivated by the insights gained from Everyday Robots' experiments (Figure 1), which demonstrated that combining simulation and real-world training yields performance greater than the sum of their individual contributions.
                 </Typography>
               </Box>
@@ -50,7 +50,7 @@ const RLWheel = () => {
                 <Typography
                   variant="subtitle2"
                   component="p"
-                  style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'rgba(0, 0, 0, 0.8)' }}
+                  style={{ fontSize: '1vw', marginTop: '0.5rem', color: 'rgba(0, 0, 0, 0.8)' }}
                 >
                   Figure 1: Everyday Robots conducted experiments to train grasping robots using a combination of simulation and real-world data, improving the performance of the robots and informing the development of an optimized controller.
                 </Typography>
@@ -92,7 +92,7 @@ const RLWheel = () => {
                 />
               </Grid>
             </Grid>
-            <Typography variant="body2" style={{ marginTop: '1rem', textAlign: 'left' }}>
+            <Typography variant="body2" style={{ marginTop: '1rem', textAlign: 'left', fontSize: 'inherit' }}>
               Learn more in the full <Link to="/rlwheelreport.pdf" target="_blank" rel="noopener noreferrer"> Technical Report</Link>.
             </Typography>
           </>

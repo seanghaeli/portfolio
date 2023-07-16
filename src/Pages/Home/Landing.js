@@ -32,8 +32,8 @@ function Landing() {
           gutterBottom
           sx={{
             fontSize: {
-              xs: '3.5vw',
-              sm: '4vw',
+              xs: '6vw',
+              sm: '5vw',
               md: '3vw',
               lg: '4vw',
             },
@@ -47,7 +47,7 @@ function Landing() {
           gutterBottom
           sx={{
             fontSize: {
-              xs: '2vw',
+              xs: '3vw',
               sm: '2vw',
               md: '2vw',
               lg: '2vw',
@@ -66,7 +66,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/linkedin-icon.png'} alt="LinkedIn" style={{ width: '100%' }} />
+            <img src={process.env.PUBLIC_URL + '/linkedin-icon.png'} alt="LinkedIn" style={{ width: '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -74,7 +74,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: '100%' }} />
+            <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -82,7 +82,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/email-icon.png'} alt="Email" style={{ width: '100%' }} />
+            <img src={process.env.PUBLIC_URL + '/email-icon.png'} alt="Email" style={{ width: '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -90,24 +90,23 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/resume-icon.png'} alt="Resume" style={{ width: '100%' }} />
+            <img src={process.env.PUBLIC_URL + '/resume-icon.png'} alt="Resume" style={{ width: '2.5vw' }} />
           </StyledIconButton>
         </Box>
       </CenteredBox>
       {isPhoneScreen && (
-        <Box sx={{ textAlign: 'center', marginBottom: 2 }}>
+        <Box sx={{ textAlign: 'center' }}>
           <Avatar
             alt="Your Name"
             src={process.env.PUBLIC_URL + '/headshot.png'}
             variant="square"
             sx={{
-              width: '30vw',
+              width: '50vw',
               height: 'auto',
-              margin: '0 auto',
+              margin: '0',
               maxWidth: '100%',
             }}
           />
-
         </Box>
       )}
       {!isPhoneScreen && (
@@ -119,7 +118,6 @@ function Landing() {
             sx={{ width: '100%', height: '100%' }}
           />
         </Box>
-
       )}
     </Box>
   );

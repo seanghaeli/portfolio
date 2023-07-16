@@ -11,9 +11,9 @@ import ScrollToTop from './Components/ScrollToTop';
 import Box from '@mui/material/Box';
 import QuantumDevices from './Pages/Projects/QuantumDevices';
 import RLWheelReport from './Pages/Projects/RLWheelReport';
-import QuickestAscent from './Pages/Papers/QuickestAscent'
-import Papers from './Pages/Papers/Papers';
-import IsingModel from './Pages/Papers/IsingModel';
+import QuickestAscent from './Pages/Projects/Papers/QuickestAscent'
+import Papers from './Pages/Projects/Papers/Papers';
+import IsingModel from './Pages/Projects/Papers/IsingModel';
 
 function App() {
   return (
