@@ -14,6 +14,7 @@ import RLWheelReport from './Pages/Projects/RLWheelReport';
 import QuickestAscent from './Pages/Projects/Papers/QuickestAscent'
 import Papers from './Pages/Projects/Papers/Papers';
 import IsingModel from './Pages/Projects/Papers/IsingModel';
+import Videos from './Pages/Projects/Videos';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/quantumdevices" element={<QuantumDevices />} />
           <Route path="/rlwheelreport.pdf" element={<RLWheelReport />} />
           <Route path="/papers" element={<Papers />} />
+          <Route path="/lectures" element={<Videos />} />
           <Route path="/quickestascent.pdf" element={<QuickestAscent />} />
           <Route path="/isingmodel.pdf" element={<IsingModel />} />
         </Routes>

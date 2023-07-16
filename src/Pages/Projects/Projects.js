@@ -25,7 +25,7 @@ const ProjectItem = styled(Box)(({ theme }) => ({
 }));
 
 const ImageContainer = styled(Box)(() => ({
-  width: '30vw',
+  width: '20vw',
   height: '30vh',
   overflow: 'hidden',
   display: 'flex',
@@ -38,6 +38,7 @@ const Image = styled('img')({
   width: '100%',
   height: '100%',
   objectFit: 'contain',
+  objectPosition: 'center',
 });
 
 const Title = styled(Typography)(() => ({
@@ -75,6 +76,11 @@ function Projects() {
       title: 'Papers',
       imageSrc: 'isingmodel.png',
       link: 'papers',
+    },
+    {
+      title: 'Lectures',
+      imageSrc: 'videos-rainbow.png',
+      link: 'lectures',
     },
     // Add more academic projects as needed
   ];

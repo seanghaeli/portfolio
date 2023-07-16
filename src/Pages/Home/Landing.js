@@ -57,7 +57,7 @@ function Landing() {
             overflow: 'hidden',
           }}
         >
-          Passionate About Machine Learning and Robotics
+          Senior Engineering Physics Undergrad
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
           <StyledIconButton
