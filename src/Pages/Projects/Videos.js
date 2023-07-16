@@ -24,7 +24,7 @@ const videos = [
         link: 'https://www.youtube.com/watch?v=PBhphDdoLoA&list=PLjYAr6I4xGWz9aP9my0zO4la6ykFkB1eW&ab_channel=SeanGhaeli'
     },
     {
-        title: 'Snell\'s Law (No Calulus)',
+        title: 'Snell\'s Law (No Calculus)',
         thumbnail: 'videos-snell.png',
         link: 'https://www.youtube.com/watch?v=Y9dvAVyZWYg&list=PLjYAr6I4xGWzgnIn1XwrgfrSmkXdrLPqr&ab_channel=SeanGhaeli'
     },
