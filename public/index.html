@@ -47,4 +47,13 @@
     -->
 </body>
 
+<body>
+  <script>
+    if (sessionStorage.redirect) {
+      history.replaceState({}, null, sessionStorage.redirect);
+      delete sessionStorage.redirect;
+    }
+  </script>
+</body>
+
 </html>
