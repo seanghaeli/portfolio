@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -22,6 +23,9 @@ const theme = createTheme({
 function Home() {
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <meta name="description" content="Hi, my name is Sean Ghaeli and I am a senior Engineering Physics undergrad student at UBC. I use this portfolio to document my experiences and ideas." />
+      </Helmet>
       <Box
         sx={{
           m: 3,
