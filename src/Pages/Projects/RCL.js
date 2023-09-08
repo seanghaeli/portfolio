@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, CardMedia, Box, Link, List, ListItem, IconButton } from '@mui/material';
+import { Typography, Grid, CardMedia, Box, Link, List, ListItem, IconButton, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/system';
 import ProjectPage from './ProjectPage';
 
@@ -10,6 +10,8 @@ const StyledIconButton = styled(IconButton)({
 });
 
 const RCL = () => {
+  const isPhoneScreen = useMediaQuery('(max-width:600px)');
+
   const project = {
     title: 'Tabular Transformer for Cardiology',
     subtitle: 'AI Solutions for Real-Time Ultrasound Data Processing',
@@ -64,7 +66,11 @@ const RCL = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: '2.5vw' }} />
+              <img
+                src={process.env.PUBLIC_URL + '/github-icon.png'}
+                alt="GitHub"
+                style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} 
+              />
             </StyledIconButton>
             <div style={{ margin: '1rem' }}></div>
             <Grid container spacing={2} alignItems="center" justifyContent="center">
@@ -78,7 +84,13 @@ const RCL = () => {
                 <Typography
                   variant="subtitle2"
                   component="p"
-                  style={{ fontSize: '1vw', marginTop: '0.5rem' }}
+                  sx={{
+                    fontSize: {
+                      xs: '3.5vw',
+                      sm: '1vw'
+                    },
+                    marginTop: '0.5rem'
+                  }}
                 >
                   Figure 1: An entry from the semi-structured echocardiography dataset
                 </Typography>
@@ -112,7 +124,13 @@ const RCL = () => {
                 <Typography
                   variant="subtitle2"
                   component="p"
-                  style={{ fontSize: '1vw', marginTop: '0.5rem' }}
+                  sx={{
+                    fontSize: {
+                      xs: '2.5vw',
+                      sm: '1vw'
+                    },
+                    marginTop: '0.5rem'
+                  }}
                 >
                   Figure 2: Performance of regression with FTTransformer with various features as target. Compares performance when dropping highly correlated features.
                 </Typography>
@@ -130,7 +148,13 @@ const RCL = () => {
                 <Typography
                   variant="subtitle2"
                   component="p"
-                  style={{ fontSize: '1vw', marginTop: '0.5rem' }}
+                  sx={{
+                    fontSize: {
+                      xs: '2.5vw',
+                      sm: '1vw'
+                    },
+                    marginTop: '0.5rem'
+                  }}
                 >
                   Figure 3: Performance comparison between TabNet and ensemble methods.
                 </Typography>
@@ -154,7 +178,13 @@ const RCL = () => {
                     variant="subtitle2"
                     component="p"
                     align="center"
-                    style={{ fontSize: '1vw', marginTop: '0.5rem', color: 'rgba(0, 0, 0, 0.8)' }}
+                    sx={{
+                      fontSize: {
+                        xs: '2.5vw',
+                        sm: '1vw'
+                      },
+                      marginTop: '0.5rem'
+                    }}
                   >
                     Figure 4: Architecture of MaskedFTTransformer
                   </Typography>
@@ -184,7 +214,11 @@ const RCL = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: '2.5vw' }} />
+              <img
+                src={process.env.PUBLIC_URL + '/github-icon.png'}
+                alt="GitHub"
+                style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} 
+              />
             </StyledIconButton>
             <div style={{ margin: '1rem' }}></div>
             <Grid container spacing={2} alignItems="center" justifyContent="center">
@@ -205,7 +239,13 @@ const RCL = () => {
                 <Typography
                   variant="subtitle2"
                   component="p"
-                  style={{ fontSize: '1vw', marginTop: '0.5rem' }}
+                  sx={{
+                    fontSize: {
+                      xs: '2.5vw',
+                      sm: '1vw'
+                    },
+                    marginTop: '0.5rem'
+                  }}
                 >
                   Figure 5: AWS Application Architecture
                 </Typography>

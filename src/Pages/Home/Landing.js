@@ -66,7 +66,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/linkedin-icon.png'} alt="LinkedIn" style={{ width: '2.5vw' }} />
+            <img src={process.env.PUBLIC_URL + '/linkedin-icon.png'} alt="LinkedIn" style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -74,7 +74,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: '2.5vw' }} />
+            <img src={process.env.PUBLIC_URL + '/github-icon.png'} alt="GitHub" style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -82,7 +82,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/email-icon.png'} alt="Email" style={{ width: '2.5vw' }} />
+            <img src={process.env.PUBLIC_URL + '/email-icon.png'} alt="Email" style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} />
           </StyledIconButton>
           <StyledIconButton
             component={Link}
@@ -90,7 +90,7 @@ function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={process.env.PUBLIC_URL + '/resume-icon.png'} alt="Resume" style={{ width: '2.5vw' }} />
+            <img src={process.env.PUBLIC_URL + '/resume-icon.png'} alt="Resume" style={{ width: isPhoneScreen ? '5vw' : '2.5vw' }} />
           </StyledIconButton>
         </Box>
       </CenteredBox>
