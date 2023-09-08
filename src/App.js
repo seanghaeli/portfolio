@@ -15,6 +15,7 @@ import QuickestAscent from './Pages/Projects/Papers/QuickestAscent'
 import Papers from './Pages/Projects/Papers/Papers';
 import IsingModel from './Pages/Projects/Papers/IsingModel';
 import Videos from './Pages/Projects/Videos';
+import RCL from './Pages/Projects/RCL'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume.pdf" element={<Resume />} />
+          <Route path="/rcl" element={<RCL />} />
           <Route path="/rlwheel" element={<RLWheel />} />
           <Route path="/quantumdevices" element={<QuantumDevices />} />
           <Route path="/rlwheelreport.pdf" element={<RLWheelReport />} />

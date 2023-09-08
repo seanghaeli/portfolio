@@ -69,7 +69,7 @@ const QuantumDevices = () => {
                                     <Typography
                                         variant="subtitle2"
                                         component="p"
-                                        align="left"
+                                        align="center"
                                         style={{ fontSize: '1vw', marginTop: '0.5rem', color: 'rgba(0, 0, 0, 0.8)' }}
                                     >
                                         Figure 2: The single electron tunneling device is what we're interested in studying. The amplifier circuit boosts the portion of the signal we care about. The analog-to-digital converter transforms the signal into computer-readable form for further analysis.

@@ -82,33 +82,33 @@ function Home() {
             </Element>
           </Grid>
           <Grid item xs={12} mb={3}>
-            <Element name="projects">
-              <Box
-                sx={{
-                  marginLeft: '10%',
-                  marginRight: '10%',
-                  display: 'flex',
-                  justifyContent: 'center',
-                }}
-              >
-                <Typography
-                  variant="h2"
-                  align="center"
+              <Element name="projects">
+                <Box
                   sx={{
-                    fontSize: {
-                      xs: '6vw',
-                      sm: '5vw',
-                      md: '3vw',
-                      lg: '4vw',
-                    },
-                  }}>
-                  Selected Projects
-                </Typography>
-              </Box>
-              <Box sx={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Projects />
-              </Box>
-            </Element>
+                    marginLeft: '10%',
+                    marginRight: '10%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <Typography
+                    variant="h2"
+                    align="center"
+                    sx={{
+                      fontSize: {
+                        xs: '6vw',
+                        sm: '5vw',
+                        md: '3vw',
+                        lg: '4vw',
+                      },
+                    }}>
+                    <div id="projects">Selected Projects</div>
+                  </Typography>
+                </Box>
+                <Box sx={{ marginLeft: '10%', marginRight: '10%' }}>
+                  <Projects />
+                </Box>
+              </Element>
           </Grid>
         </Grid>
       </Box>

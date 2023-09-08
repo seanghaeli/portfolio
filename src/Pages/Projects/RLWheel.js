@@ -76,7 +76,7 @@ const RLWheel = () => {
                     title="YouTube Video"
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/lUwQqfhzdlQ" // Replace with your actual YouTube video URL
+                    src="https://www.youtube.com/embed/lUwQqfhzdlQ"
                     frameBorder="0"
                     allowFullScreen
                     style={{ position: 'absolute', top: 0, left: 0 }}

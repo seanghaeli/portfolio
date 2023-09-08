@@ -59,6 +59,11 @@ const headerTextStyle = {
 function Projects() {
   const engineeringProjects = [
     {
+      title: 'Tabular Transformer for Cardiology',
+      imageSrc: 'rcl-ultrasound.png',
+      link: 'rcl',
+    },
+    {
       title: 'Reinforcement Learning Wheel',
       imageSrc: 'rlwheel.png',
       link: 'rlwheel',
