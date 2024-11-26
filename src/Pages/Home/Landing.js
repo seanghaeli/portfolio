@@ -98,7 +98,7 @@ function Landing() {
         <Box sx={{ textAlign: 'center' }}>
           <Avatar
             alt="Your Name"
-            src={process.env.PUBLIC_URL + '/headshot.png'}
+            src={process.env.PUBLIC_URL + '/headshot-1.jpeg'}
             variant="square"
             sx={{
               width: '50vw',
@@ -113,7 +113,7 @@ function Landing() {
         <Box sx={{ width: '30vw', height: 'auto', margin: '0 auto', maxWidth: '100%' }}>
           <Avatar
             alt="Your Name"
-            src={process.env.PUBLIC_URL + '/headshot.png'}
+            src={process.env.PUBLIC_URL + '/headshot-1.jpeg'}
             variant="square"
             sx={{ width: '100%', height: '100%' }}
           />
