@@ -57,7 +57,7 @@ function Landing() {
             overflow: 'hidden',
           }}
         >
-          Senior Engineering Physics Undergrad
+          Engineering Physics Graduate
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
           <StyledIconButton
@@ -78,7 +78,7 @@ function Landing() {
           </StyledIconButton>
           <StyledIconButton
             component={Link}
-            href="mailto:seanghaeli@gmail.com"
+            href="mailto:sghaeli@alum.ubc.ca"
             target="_blank"
             rel="noopener noreferrer"
           >

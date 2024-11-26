@@ -210,7 +210,7 @@ const RCL = () => {
             <div style={{ margin: '1rem' }}></div>
             <StyledIconButton
               component={Link}
-              href="https://github.com/UBC-CIC/echo-data-flow/"
+              href="https://github.com/seanghaeli/rcl-echo-cloud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -256,11 +256,11 @@ const RCL = () => {
               <List sx={{ listStyleType: 'disc' }}>
                 <ListItem sx={{ display: 'list-item' }}><b>Data Storage:</b> Our echocardiogram data is securely housed in Amazon S3, setting the stage for robust processing capabilities.</ListItem>
                 <ListItem sx={{ display: 'list-item' }}><b>Model Deployment:</b> Our containerized AI models are stored in Amazon ECR repositories, guaranteeing flexibility and scalability.</ListItem>
-                <ListItem sx={{ display: 'list-item' }}><b>Automatic Validation:</b> With AWS Lambda triggers, we've set up mechanisms for real-time data validation, ensuring consistent data integrity and quality. <Link href="https://github.com/UBC-CIC/echo-data-flow/blob/feature/nima/initial_deployment_attempt/backend/lambdas/validation/index.py" target="_blank" rel="noopener noreferrer">Source here</Link>.</ListItem>
+                <ListItem sx={{ display: 'list-item' }}><b>Automatic Validation:</b> With AWS Lambda triggers, we've set up mechanisms for real-time data validation, ensuring consistent data integrity and quality. <Link href="https://github.com/seanghaeli/rcl-echo-cloud/blob/master/backend/lambdas/validation/index.py" target="_blank" rel="noopener noreferrer">Source here</Link>.</ListItem>
                 <ListItem sx={{ display: 'list-item' }}><b>Instance Scaling:</b> When there's a need to scale out quickly, using a custom AMI can make the deployment of new instances faster.</ListItem>
                 <ListItem sx={{ display: 'list-item' }}><b>Cost-effective Backend Operations:</b> Using EC2 Spot instances, our backend dynamically responds to SQS messages, interfacing with ECR to retrieve the model container, offering a balance between performance and expenditure.</ListItem>
               </List>
-              <b>See the source of this cloud solution <Link href="https://github.com/UBC-CIC/echo-data-flow/" target="_blank" rel="noopener noreferrer">here</Link>.</b>
+              <b>See the source of this cloud solution <Link href="https://github.com/seanghaeli/rcl-echo-cloud" target="_blank" rel="noopener noreferrer">here</Link>.</b>
             </Typography>
           </>
         ),

@@ -87,7 +87,7 @@ function Experience() {
       company: 'Cascadia Carbon',
       imageSrc: 'cascadiacarbon.png',
       position: 'Software Engineer',
-      duration: 'Jan 2021 - Apr 2021',
+      duration: 'Mar 2021 - Apr 2021',
       description: (
         <>
           Developed sales platform, website, and redesigned iOS app.

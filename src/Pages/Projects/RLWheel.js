@@ -81,7 +81,7 @@ const RLWheel = () => {
                 title="YouTube Video"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/lUwQqfhzdlQ"
+                src="https://www.youtube.com/watch?v=y72VbFgktZc"
                 frameBorder="0"
                 allowFullScreen
                 style={{ position: 'absolute', top: 0, left: 0 }}
@@ -92,7 +92,7 @@ const RLWheel = () => {
             <CardMedia
               component="img"
               image="rlwheel-system.png"
-              alt="Systme objective"
+              alt="System objective"
               style={{ height: '100%', objectFit: 'contain' }}
             />
           </Grid>
