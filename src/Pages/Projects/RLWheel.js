@@ -34,6 +34,10 @@ const RLWheel = () => {
                 </Typography>
                 <br />
                 <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left', fontSize: 'inherit' }}>
+                  Sergey Levine makes the case for real world Reinforcement Learning  <RouterLink component={RouterLink} to="https://www.youtube.com/watch?v=Ik1nS2E4ar4&ab_channel=RAIL" target="_blank" rel="noopener noreferrer"> here</RouterLink>.
+                </Typography>
+                <br />
+                <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left', fontSize: 'inherit' }}>
                   Our project is motivated by the insights gained from Everyday Robots' experiments (Figure 1), which demonstrated that combining simulation and real-world training yields performance greater than the sum of their individual contributions.
                 </Typography>
               </Box>
@@ -81,10 +85,10 @@ const RLWheel = () => {
                 title="YouTube Video"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/watch?v=y72VbFgktZc"
+                src="https://www.youtube.com/embed/y72VbFgktZc"
                 frameBorder="0"
                 allowFullScreen
-                style={{ position: 'absolute', top: 0, left: 0 }}
+                style={{ position: 'absolute', top: 10, left: 0 }}
               />
             </Box>
           </Grid>
