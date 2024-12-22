@@ -266,6 +266,14 @@ const RCL = () => {
         ),
       }
     ],
+    meta:
+      <>
+          <meta property="og:title" content="Tabular Transformer for Cardiology" />
+          <meta property="og:description" content="Implement AI techniques to enhance sonography processes: improving throughput, facilitating real-time view predictions, and generating embeddings that capture measurement relationships, integrated on AWS for timely processing." />
+          <meta property="og:image" content="https://seanghaeli.com/rcl-maskedarchitecture.png" />
+          <meta property="og:url" content="https://seanghaeli.com/rcl" />
+          <meta property="og:type" content="website" />
+      </>
   };
 
   return <ProjectPage project={project} />;

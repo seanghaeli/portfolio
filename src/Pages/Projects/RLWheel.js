@@ -108,6 +108,14 @@ const RLWheel = () => {
     ),
       },
     ],
+    meta:
+      <>
+        <meta property="og:title" content="Reinforcement Learning Wheel Controller" />
+        <meta property="og:description" content="Exploring simulation to real transfer for robotics and developing autonomous platforms." />
+        <meta property="og:image" content="https://seanghaeli.com/rlwheel-group.jpeg" />
+        <meta property="og:url" content="https://www.seanghaeli.com/rlwheel" />
+        <meta property="og:type" content="website" />
+      </>
   };
 
 return <ProjectPage project={project} />;

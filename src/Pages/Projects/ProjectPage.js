@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Typography, Box, CardMedia, Grid } from '@mui/material';
+import { Helmet } from 'react-helmet-async';
 
 const ProjectPage = ({ project }) => {
-  const { title, subtitle, picture, sections } = project;
+  const { title, subtitle, picture, sections, meta } = project;
 
   const titleStyle = {
     fontSize: {
@@ -27,6 +28,10 @@ const ProjectPage = ({ project }) => {
   }
 
   return (
+    <div>
+    <Helmet>
+        {meta}
+    </Helmet>
     <Box
       sx={{
         m: 3,
@@ -104,6 +109,7 @@ const ProjectPage = ({ project }) => {
         </Box>
       </Container>
     </Box >
+    </div>
   );
 };
 

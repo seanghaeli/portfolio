@@ -16,9 +16,11 @@ import Papers from './Pages/Projects/Papers/Papers';
 import IsingModel from './Pages/Projects/Papers/IsingModel';
 import Videos from './Pages/Projects/Videos';
 import RCL from './Pages/Projects/RCL'
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router basename=''>
       <ScrollToTop />
       <CssBaseline />
@@ -46,6 +48,7 @@ function App() {
         </Routes>
       </Box>
     </Router>
+    </HelmetProvider>
   );
 }
 

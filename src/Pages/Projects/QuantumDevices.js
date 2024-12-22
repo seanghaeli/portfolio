@@ -242,6 +242,14 @@ const QuantumDevices = () => {
                 ),
             },
         ],
+        meta:
+            <>
+                <meta property="og:title" content="Quantum Devices Engineering" />
+                <meta property="og:description" content="Developing and analyzing high-precision, high-speed devices for capturing single-electron tunneling events." />
+                <meta property="og:image" content="https://seanghaeli.com/quantumdevices-fridge.png" />
+                <meta property="og:url" content="https://seanghaeli.com/quantumdevices" />
+                <meta property="og:type" content="website" />
+            </>
     };
     return <ProjectPage project={project} />;
 };
