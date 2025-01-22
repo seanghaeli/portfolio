@@ -4,6 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import ProjectPage from './ProjectPage';
 
 const RLWheel = () => {
+  const link = 'https://drive.google.com/file/d/1-_E7y8qAGDXrpV4Ew8ip3U27Yok6rNIG/view?usp=sharing'
   const project = {
     title: 'Reinforcement Learning Wheel',
     subtitle: 'Exploring Simulation To Real Transfer For Robotics',
@@ -102,7 +103,7 @@ const RLWheel = () => {
           </Grid>
         </Grid>
         <Typography variant="body2" style={{ marginTop: '1rem', textAlign: 'left', fontSize: 'inherit' }}>
-          Learn more in the full <RouterLink component={RouterLink} to="/rlwheelreport.pdf" target="_blank" rel="noopener noreferrer"> Technical Report</RouterLink>.
+          Learn more in the full <RouterLink component={RouterLink} to={link} target="_blank" rel="noopener noreferrer"> Technical Report</RouterLink>.
         </Typography>
       </>
     ),
