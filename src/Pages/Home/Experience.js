@@ -48,7 +48,7 @@ function Experience() {
       company: 'UBC Robotics and Control Lab',
       imageSrc: 'ubc.png',
       position: 'Machine Learning Researcher',
-      duration: 'May 2023 - Present',
+      duration: 'May 2023 - Aug 2023',
       description: (
         <>
           Developing transformer based models for medical applications. Deploying to {' '}
