@@ -23,7 +23,7 @@ const RCL = () => {
           <>
             <div style={{ margin: '1rem' }}></div>
             <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'center', fontSize: 'inherit' }}>
-              Implement AI techniques to enhance sonography processes: improving throughput, facilitating real-time view predictions, and generating embeddings that capture measurement relationships, integrated on AWS for timely processing.
+              Input heart ultrasounds to AI models to automatically generate physician reports.
             </Typography>
             <div style={{ margin: '1rem' }}></div>
           </>

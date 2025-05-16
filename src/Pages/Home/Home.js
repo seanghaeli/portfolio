@@ -24,7 +24,7 @@ function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
-        <meta name="description" content="Hi, my name is Sean Ghaeli and I am a senior Engineering Physics undergrad student at UBC. I use this portfolio to document my experiences and ideas." />
+        <meta name="description" content="Hi, my name is Sean Ghaeli and I am an engineer in Vancouver, currently writing software at AWS. I use this portfolio to document my experiences and ideas." />
       </Helmet>
       <Box
         sx={{
@@ -51,7 +51,7 @@ function Home() {
               </Box>
             </Element>
           </Grid>
-          <Grid item xs={12} mb={3}>
+          {/* <Grid item xs={12} mb={3}>
             <Element name="experience">
               <Box
                 sx={{
@@ -80,7 +80,7 @@ function Home() {
                 <Experience />
               </Box>
             </Element>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} mb={3}>
               <Element name="projects">
                 <Box

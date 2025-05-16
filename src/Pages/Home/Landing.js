@@ -57,7 +57,7 @@ function Landing() {
             overflow: 'hidden',
           }}
         >
-          Engineering Physics Graduate
+          Software Engineer @ AWS
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
           <StyledIconButton

@@ -16,7 +16,7 @@ const RLWheel = () => {
           <>
             <div style={{ margin: '1rem' }}></div>
             <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'center', fontSize: 'inherit' }}>
-              Develop autonomous platforms for "sim2real" reinforcement learning training.
+              Use reinforcement learning to control real world systems (aka, the future of automation).
             </Typography>
             <div style={{ margin: '1rem' }}></div>
           </>
