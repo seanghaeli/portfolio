@@ -22,6 +22,10 @@ function RainbowRedirect() {
   window.location.href = "https://www.youtube.com/watch?v=g7rV8b0Tb2k&list=PLjYAr6I4xGWyMt2disjClb3SARbW1Tb17&ab_channel=SeanGhaeli"
   return null;
 }
+function OssRedirect() {
+  window.location.href = "https://seanghaeli.substack.com/p/faang-open-source"
+  return null;
+}
 
 function App() {
   return (
@@ -51,6 +55,7 @@ function App() {
           <Route path="/quickestascent.pdf" element={<QuickestAscent />} />
           <Route path="/isingmodel.pdf" element={<IsingModel />} />
           <Route path="/rainbow" element={<RainbowRedirect />} />
+          <Route path="/oss" element={<OssRedirect />} />
         </Routes>
       </Box>
     </Router>
