@@ -27,6 +27,11 @@ function OssRedirect() {
   return null;
 }
 
+function AirflowRedirect() {
+  window.location.href = "https://github.com/apache/airflow/pulls?q=is%3Apr+author%3Aseanghaeli"
+  return null;
+}
+
 function App() {
   return (
     <HelmetProvider>
@@ -56,6 +61,7 @@ function App() {
           <Route path="/isingmodel.pdf" element={<IsingModel />} />
           <Route path="/rainbow" element={<RainbowRedirect />} />
           <Route path="/oss" element={<OssRedirect />} />
+          <Route path="/airflow" element={<AirflowRedirect />} />
         </Routes>
       </Box>
     </Router>
