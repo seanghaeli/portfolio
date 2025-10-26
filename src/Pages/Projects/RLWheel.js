@@ -29,8 +29,8 @@ const RLWheel = () => {
             <Grid item xs={12} md={8}>
               <Box sx={{ my: 1 }}>
                 <Typography variant="body1" style={{ color: 'rgba(0, 0, 0, 1)', textAlign: 'left', fontSize: 'inherit' }}>
-                  The complexities and inconsistencies of physical systems present challenges for reinforcement learning applications.
-                  To bridge this gap, the project endeavors to create self-resetting, autonomous platforms for "sim2real" training,
+                  The complexities of physical systems present challenges for reinforcement learning applications.
+                  The project endeavors to create self-resetting, autonomous platforms for "sim2real" training,
                   ultimately enhancing the application of simulation-trained models to real-world scenarios.
                 </Typography>
                 <br />
